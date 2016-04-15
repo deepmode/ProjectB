@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="I8w-qm-yc0">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Project B-->
+        <scene sceneID="JR0-jf-exK">
+            <objects>
+                <viewController id="c1L-09-GE8" customClass="ViewController" customModule="ProjectB" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EhE-lV-tHa"/>
+                        <viewControllerLayoutGuide type="bottom" id="l6Z-fk-1pM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="o1a-cj-kOK">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I am at the back" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qRJ-nq-ZkT">
+                                <rect key="frame" x="173.5" y="104" width="253.5" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gNJ-DL-zZ9">
+                                <rect key="frame" x="304" y="72" width="288" height="153.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="em4-6f-ngq">
+                                <rect key="frame" x="253" y="233" width="94" height="30"/>
+                                <state key="normal" title="Change Color"/>
+                                <connections>
+                                    <action selector="changeColorButtonPress:" destination="c1L-09-GE8" eventType="touchUpInside" id="tVQ-q0-yO6"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g9I-aJ-nxM">
+                                <rect key="frame" x="8" y="72" width="288" height="153.5"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="g9I-aJ-nxM" secondAttribute="height" multiplier="15:8" id="gl5-hr-GqJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gNJ-DL-zZ9" firstAttribute="height" secondItem="g9I-aJ-nxM" secondAttribute="height" id="E9P-kp-NBk"/>
+                            <constraint firstItem="em4-6f-ngq" firstAttribute="top" secondItem="gNJ-DL-zZ9" secondAttribute="bottom" constant="8" id="XaB-Lx-gUB"/>
+                            <constraint firstItem="g9I-aJ-nxM" firstAttribute="leading" secondItem="o1a-cj-kOK" secondAttribute="leading" constant="8" id="Xfp-ha-h7V"/>
+                            <constraint firstItem="em4-6f-ngq" firstAttribute="centerX" secondItem="o1a-cj-kOK" secondAttribute="centerX" id="XnN-nd-lmT"/>
+                            <constraint firstAttribute="trailing" secondItem="gNJ-DL-zZ9" secondAttribute="trailing" constant="8" id="dgr-VJ-bSc"/>
+                            <constraint firstItem="qRJ-nq-ZkT" firstAttribute="top" secondItem="EhE-lV-tHa" secondAttribute="bottom" constant="40" id="jgT-L2-i7d"/>
+                            <constraint firstItem="g9I-aJ-nxM" firstAttribute="top" secondItem="EhE-lV-tHa" secondAttribute="bottom" constant="8" id="pPr-uE-Ibv"/>
+                            <constraint firstItem="qRJ-nq-ZkT" firstAttribute="centerX" secondItem="o1a-cj-kOK" secondAttribute="centerX" id="tQi-Q6-mqH"/>
+                            <constraint firstItem="gNJ-DL-zZ9" firstAttribute="width" secondItem="g9I-aJ-nxM" secondAttribute="width" id="wLq-v1-aKj"/>
+                            <constraint firstItem="gNJ-DL-zZ9" firstAttribute="leading" secondItem="g9I-aJ-nxM" secondAttribute="trailing" constant="8" id="wP7-ip-jLg"/>
+                            <constraint firstItem="gNJ-DL-zZ9" firstAttribute="top" secondItem="EhE-lV-tHa" secondAttribute="bottom" constant="8" id="zGv-8R-9Op"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Project B" id="wST-Oq-40w"/>
+                    <connections>
+                        <outlet property="displayView1" destination="g9I-aJ-nxM" id="BPe-CD-Jpz"/>
+                        <outlet property="displayView2" destination="gNJ-DL-zZ9" id="UWP-Sq-BQH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Bx-K3-wxe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="950" y="261"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="4MH-Cz-mFp">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="I8w-qm-yc0" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="JLJ-c6-odv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="c1L-09-GE8" kind="relationship" relationship="rootViewController" id="xbp-82-dzm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nc1-jV-ky7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138" y="261"/>
+        </scene>
+    </scenes>
+</document>
