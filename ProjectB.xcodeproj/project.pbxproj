@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6B6FADCC1CC0C9AF006D6CCA /* EHSharecode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B967FF51C96B02600A91857 /* EHSharecode.framework */; };
-		6B6FADCD1CC0C9AF006D6CCA /* EHSharecode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B967FF51C96B02600A91857 /* EHSharecode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		6B6FAE101CC0F092006D6CCA /* EHSharecode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6FAE0B1CC0EFB5006D6CCA /* EHSharecode.framework */; };
+		6B6FAE111CC0F092006D6CCA /* EHSharecode.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B6FAE0B1CC0EFB5006D6CCA /* EHSharecode.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		6B967FD91C96A57B00A91857 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B967FD81C96A57B00A91857 /* AppDelegate.swift */; };
 		6B967FDB1C96A57B00A91857 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B967FDA1C96A57B00A91857 /* ViewController.swift */; };
 		6B967FDE1C96A57B00A91857 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6B967FDC1C96A57B00A91857 /* Main.storyboard */; };
@@ -17,13 +17,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		6B6FADCE1CC0C9AF006D6CCA /* Embed Frameworks */ = {
+		6B6FAE0A1CC0EF9D006D6CCA /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				6B6FADCD1CC0C9AF006D6CCA /* EHSharecode.framework in Embed Frameworks */,
+				6B6FAE111CC0F092006D6CCA /* EHSharecode.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -31,6 +31,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		6B6FAE0B1CC0EFB5006D6CCA /* EHSharecode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = EHSharecode.framework; path = "/Users/ericho/Library/Developer/Xcode/DerivedData/Share-arbrfvnlpojbcmaihfczkgjoldut/Build/Products/Debug-iphoneos/EHSharecode.framework"; sourceTree = "<absolute>"; };
 		6B967FD51C96A57B00A91857 /* ProjectB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProjectB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B967FD81C96A57B00A91857 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6B967FDA1C96A57B00A91857 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -38,7 +39,6 @@
 		6B967FDF1C96A57B00A91857 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6B967FE21C96A57B00A91857 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6B967FE41C96A57B00A91857 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6B967FF51C96B02600A91857 /* EHSharecode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = EHSharecode.framework; path = "/Users/ericho/Library/Developer/Xcode/DerivedData/Share-gyhberuuwoedkpagrzfvtmgwqrcz/Build/Products/Debug-iphoneos/EHSharecode.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +46,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B6FADCC1CC0C9AF006D6CCA /* EHSharecode.framework in Frameworks */,
+				6B6FAE101CC0F092006D6CCA /* EHSharecode.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,7 +56,7 @@
 		6B967FCC1C96A57B00A91857 = {
 			isa = PBXGroup;
 			children = (
-				6B967FF51C96B02600A91857 /* EHSharecode.framework */,
+				6B6FAE0B1CC0EFB5006D6CCA /* EHSharecode.framework */,
 				6B967FD71C96A57B00A91857 /* ProjectB */,
 				6B967FD61C96A57B00A91857 /* Products */,
 			);
@@ -93,7 +93,7 @@
 				6B967FD11C96A57B00A91857 /* Sources */,
 				6B967FD21C96A57B00A91857 /* Frameworks */,
 				6B967FD31C96A57B00A91857 /* Resources */,
-				6B6FADCE1CC0C9AF006D6CCA /* Embed Frameworks */,
+				6B6FAE0A1CC0EF9D006D6CCA /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
