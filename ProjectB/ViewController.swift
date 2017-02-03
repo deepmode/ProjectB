@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func changeColorButtonPress(sender: AnyObject) {
+    @IBAction func changeColorButtonPress(_ sender: AnyObject) {
         self.displayView1.backgroundColor = UIColor.randomColor
         self.displayView2.backgroundColor = UIColor.randomColor
     
